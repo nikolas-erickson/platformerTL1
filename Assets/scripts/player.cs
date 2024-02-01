@@ -3,14 +3,10 @@ using System.Collections.Generic;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 
-public class player : MonoBehaviour
+public class player : Entity
 {
     // Variables
-    private float horizontal;
     private bool isFacingRight = true;
-    [SerializeField] private float speed;
-    [SerializeField] private float jumpPower;
-    public Rigidbody2D rigidBody;
     public Transform groundCheck;
     public LayerMask groundLayer;
     public Transform headCheck;
@@ -21,17 +17,19 @@ public class player : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && isGround())
+        if (Input.GetButtonDown("Jump") && isGround() && currentState != jumpState)
         {
-            rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpPower);
+            currentState = jumpState;
+            currentState.EnterState(this);
         }
 
         flip();
+        currentState.UpdateState(this);
     }
 
     private void FixedUpdate()
     {
-        rigidBody.velocity = new Vector2(horizontal * speed, rigidBody.velocity.y);
+        currentState.FixedUpdateState(this);
     }
 
     private bool isGround()
@@ -50,6 +48,14 @@ public class player : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Brick" && isCollidingWithBrick())
+        {
+            Destroy(collision.gameObject);
+        }
+        currentState.OnCollisionEnter(this);
+    }
     private bool isCollidingWithBrick()
     {
         return Physics2D.OverlapCircle(headCheck.position, 0.2f, brickLayer);
