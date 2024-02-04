@@ -1,0 +1,3163 @@
+fileFormatVersion: 2
+guid: eaeed9de5ed5d494497bf1d433180680
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: monsters_pets_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1420
+        width: 89
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52dbb6bf5156c6740a19f8dc0ceae67b
+      internalID: -1236786508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1420
+        width: 100
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0224fea4abc2ab54ca13eeb56707090a
+      internalID: -1919876208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1421
+        width: 104
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360ff5c4cbe0f5d49a1f6705d0649dca
+      internalID: -1828233005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_3
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1419
+        width: 111
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d7785a25ab0874aa6684153e362d92
+      internalID: 283957229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_4
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1422
+        width: 114
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4569b75fcd149ae4baec2318eae0be18
+      internalID: 2045621721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_5
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1422
+        width: 117
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360c7a5cd83e15249b9fbb18aff87b35
+      internalID: 375061637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_6
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 1416
+        width: 113
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54a0b084093a3d4eb67ca494a73d393
+      internalID: 1889641988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_7
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1415
+        width: 111
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e0246ec68f07746b3e4347d9a23238
+      internalID: 110903963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_8
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 1422
+        width: 100
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af18d29268f29e4d9cf407074f65a19
+      internalID: -1386539776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_9
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1419
+        width: 120
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0e25fcff32ea449ae6514909f05a2c
+      internalID: 671258755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_10
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1420
+        width: 89
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6072315461064f4418df83c9616cbeeb
+      internalID: 1538566451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_11
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1420
+        width: 89
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19738aec10769874ca489dc37b6d36b3
+      internalID: -1266966217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_12
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1290
+        width: 93
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e9c104f6fc9ba4c875c5aded5ed7c6
+      internalID: -1854309645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_13
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1294
+        width: 82
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261ef8b82ba7679428a7f51375685541
+      internalID: -1740529035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_14
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1302
+        width: 121
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce88eeb898471044cbb87c3b87bc6892
+      internalID: 2109987217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_15
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1301
+        width: 103
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81500f4614c3a841b2dba56cc596bb8
+      internalID: 384452497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_16
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1294
+        width: 73
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2af3db6320a1e445b3cdc72b26211f3
+      internalID: 989457242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_17
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1293
+        width: 73
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ae4ed5113064b47a0310142a26679a
+      internalID: -1312200375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_18
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1293
+        width: 73
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b099c3661d8d049b9aef042ed69e4e
+      internalID: -586363375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_19
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1294
+        width: 74
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5deadd11ee9ea46a033152fd8b83d1
+      internalID: 232851061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_20
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1293
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37513e1f36e7ac247ae9976fc17a134e
+      internalID: -246142789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_21
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1293
+        width: 73
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8888d1517647b49a2cf390738b6027
+      internalID: -688840809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_22
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1164
+        width: 89
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54cfffdf9d9f3064fb9a660bcdc64752
+      internalID: -1843127353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_23
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1165
+        width: 93
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01258b7cfdcd2c64f9b5d76db26ceab3
+      internalID: -1727912697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_24
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1165
+        width: 93
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca267e0b53965747b9d47f3174a5e38
+      internalID: 305228432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_25
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1164
+        width: 94
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27946efb8fc16a246a56983999437126
+      internalID: 2083445669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_26
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1164
+        width: 94
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c75fc6da5ef462459702603cc35630d
+      internalID: -176627875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_27
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1164
+        width: 94
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77610cb0ffe0ed4fac68a68ad8972db
+      internalID: 1562900519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_28
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1166
+        width: 94
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59be416de977b8d44bdfa5589085bd44
+      internalID: -53437566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_29
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1166
+        width: 101
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34374376b6427864e8a534ad2f0a2150
+      internalID: 837500824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_30
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1166
+        width: 105
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0769b95d8d5084091a9eaa70f0a32a
+      internalID: 790493954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_31
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 1166
+        width: 102
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01011c5314612764aa9896381290cd77
+      internalID: -2063912278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_32
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1166
+        width: 94
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d433e91428ff3478569bffd03fff1e
+      internalID: -1907762605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_33
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 1165
+        width: 95
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0340aec8d4476458dc8b9ecb2534e3
+      internalID: 871843792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_34
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1036
+        width: 95
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ee114ca112f2a45b14eadbc2d901e8
+      internalID: -740047860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_35
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1036
+        width: 93
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b978ad674eb0534c8322bf2f5272618
+      internalID: 960248079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_36
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1036
+        width: 91
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378bf3b0abe0d3b45a8342e280f7a16a
+      internalID: -1787700172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_37
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1036
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53faf67c4f607be41a25179995429e3f
+      internalID: 473180153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_38
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1036
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1893b646b2c78e044adfd9e8eba29e18
+      internalID: 1437122172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_39
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1036
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2633ff723e02add4b8e60b1c9062ef72
+      internalID: 89924863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_40
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1036
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9326238ae03b2894086f002d4e10dfd4
+      internalID: -980827705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_41
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 1036
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022eb1ae35aef2f4ba9c5d52a4614e50
+      internalID: -2080454138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_42
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1036
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e98ab87b9c0a148b641f228151b579
+      internalID: 632169054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_43
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 1036
+        width: 91
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c76f5feb7511b4980bb9bdce6fa0a8
+      internalID: -969894946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_44
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1036
+        width: 93
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76140a9edf11b64b97162792bd7f492
+      internalID: 77603532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_45
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1036
+        width: 95
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802b616b467bf1d4fac77d389cfc6afc
+      internalID: 1629059550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_46
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 908
+        width: 99
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a540d004ccce154b95f7322136ca431
+      internalID: -915789826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_47
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 908
+        width: 107
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba8f55ef3f351048aacbc22ab828936
+      internalID: -1391662028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_48
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 909
+        width: 118
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832a52c78093710448be0d067a221d46
+      internalID: -1289713245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_49
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 907
+        width: 118
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23700663276a85d40b79a08791b8d352
+      internalID: 1168433169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_50
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 910
+        width: 118
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1d6d90aea69ae41906e0e6b1b30185
+      internalID: 1916487009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_51
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 910
+        width: 114
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efec4b9f0896e8e4596edd9f92dbd46f
+      internalID: 1413254870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_52
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 904
+        width: 113
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839592fe842802b4f8295479e4e24a3a
+      internalID: 300939677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_53
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 903
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f54992f8bdf5d6479d1e0f637c81494
+      internalID: 1476726345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_54
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 910
+        width: 106
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e93e3be02c36784fbf3d29bcf8fa247
+      internalID: -862494046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_55
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 907
+        width: 122
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba0d42c3d9c76f4c8d26302b07e4445
+      internalID: 812248144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_56
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 908
+        width: 99
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f76a771a4f3b1644882e75216e94fea
+      internalID: -710359083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_57
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 908
+        width: 98
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef32e2110e72e449b8bc76d4c09c754
+      internalID: 431045415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_58
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 778
+        width: 104
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da78f45885dbd8742a650fd6b6dd49be
+      internalID: 1889820696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_59
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 774
+        width: 80
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cda69ec992a33141b84239101749996
+      internalID: -951666693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_60
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 790
+        width: 122
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d86e68b73abe194ab11314c46ab5496
+      internalID: -2056213757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_61
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 791
+        width: 112
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91459a6d9a444f84abe4517f17b4a683
+      internalID: -1226866305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_62
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 782
+        width: 71
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a0e2cd8d91de143a29cb0043ddb88b
+      internalID: -909862595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_63
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 781
+        width: 73
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b131abfecb628a34ea120e9be3358305
+      internalID: 1839439531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_64
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 781
+        width: 73
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52a23651ebc3b842bf8e7ace085969d
+      internalID: 692186828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_65
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 782
+        width: 74
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1c18d8d92199c4d95bc08f0618bd7b
+      internalID: -128514724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_66
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 781
+        width: 70
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1e536fc225aba44aa542fb4b68cf42
+      internalID: 109011211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_67
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 781
+        width: 71
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d972e30bfb896d4386180e71a230bf6
+      internalID: 1040150156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_68
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 652
+        width: 99
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364e8255eae35ba42a717b159e5109f7
+      internalID: -1635444830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_69
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 653
+        width: 105
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306b184c33bb6d84cbccac7b23ca6f84
+      internalID: -490485526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_70
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 653
+        width: 106
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c06eff8c853d9342b984dd8178a877d
+      internalID: 806313101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_71
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 652
+        width: 107
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628372e1e91a67a459dac7255bf90b31
+      internalID: -952692268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_72
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 652
+        width: 104
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289592e308173c34a8a8ded5f7094f45
+      internalID: 1457453959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_73
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 652
+        width: 104
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422d3edd5d72162438dd707c6d5d7b0c
+      internalID: -348951968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_74
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 654
+        width: 102
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83c3eed13c5f5e4ca7eede202b7093b
+      internalID: 1135923618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_75
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 654
+        width: 101
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2e3d02b9a0a7844b807071c6d86b78
+      internalID: 1597993310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_76
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 654
+        width: 103
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c437a16a63b4374aae083b94f8d9f33
+      internalID: -494699068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_77
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 654
+        width: 105
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bfd70a55ac70f44bbff2df6b0e7988
+      internalID: -1671093991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_78
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 654
+        width: 107
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deaa8b29236d272438b4fdcf3e84b3c6
+      internalID: -202538065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_79
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 653
+        width: 109
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d27c3ae4da76841bd23876bd61a610
+      internalID: -768442359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_80
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 524
+        width: 104
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7198734258edcc45ac03b6e7c4d8403
+      internalID: 1200552320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_81
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 524
+        width: 107
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86169952f1df29249be6e7d0ff6aa61f
+      internalID: 147206357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_82
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 524
+        width: 106
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfda0c4cb4ca0d49b23f5f59521ed03
+      internalID: 264226426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_83
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 523
+        width: 108
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad45edfd206fb340bcd67e25e1005c5
+      internalID: 1092151659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_84
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 524
+        width: 109
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc0ff687c58152449b9616a63a94f85
+      internalID: -397941077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_85
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 524
+        width: 108
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3202ec6a317a7748ab1c0ab0b8df4f9
+      internalID: 870567216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_86
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 524
+        width: 109
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e8efcc45e68064fad691a7a71790af
+      internalID: -638871025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_87
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 524
+        width: 108
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9246e4c0073737246bf3c8cb86b832f4
+      internalID: 1806269763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_88
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 524
+        width: 109
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b268f73d1bebe94593f08fae6653080
+      internalID: -200377016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_89
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 524
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2aa06c70e493bb4c97afcf4674d59f7
+      internalID: 941940355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_90
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 524
+        width: 95
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ff971545acfc641b44e60ff901bc8f
+      internalID: -1137333369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_91
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 524
+        width: 104
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909bdb05f8de66a489f1a039ecf3e5ac
+      internalID: 226702700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_92
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 398
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1e61ecbd8a5d4419cb3c2a26cd2046
+      internalID: -1396627812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_93
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 398
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ac15f003f203b4dae59a6c7ee78017
+      internalID: -1362330375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_94
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 397
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397983d0efcd4714baf49c9555b78273
+      internalID: 1580094099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_95
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 396
+        width: 57
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408eb541e76993749ba348dc85540378
+      internalID: 29756391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_96
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 398
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c240503fae28d4a8df8e1288bacdc0
+      internalID: 1960458376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_97
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 399
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c9930169b11cd4f8924d8af71d9994
+      internalID: 1991502805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_98
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 398
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1854ecf3d1037e141a1365f73cc649a1
+      internalID: 259336190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_99
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 398
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df674578ca9736443b4590df310a4dc2
+      internalID: -806717367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_100
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 398
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82ccf871cb3fec49b5da3aa0c9ad8a7
+      internalID: 1823381255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_101
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 398
+        width: 72
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d4aa5409c57734499dcbc0f10d04ed
+      internalID: 2029421867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_102
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 398
+        width: 72
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb92f1ee67d2d4408c7f9dac86e6114
+      internalID: -1695542667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_103
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 398
+        width: 72
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bf75522c13dc54a8fbd189db3059f2
+      internalID: 1192396060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_104
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 270
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418d6839d76761f4980864ace486c1d2
+      internalID: -411523982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_105
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 270
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe6ecf452854454ea18508e5bf2e6b9
+      internalID: 862396042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_106
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 270
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ca779d99fdc324785e4f46a50b3701
+      internalID: 914740156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_107
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 270
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6b503572f3918429073d42024ff553
+      internalID: 169602486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_108
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 270
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f845d7387b63244b312356e476c75e
+      internalID: 1348942056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_109
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 270
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e9c3b1ee57cb54c8be0753183c416b
+      internalID: 1057364910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_110
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 269
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef1e721bd8b2194b946e4319c2a541f
+      internalID: -138332297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_111
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 269
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052466d95512de84396a33a88719f2d1
+      internalID: -339614958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_112
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 269
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df9f823d95e35843abca9aea9615bef
+      internalID: -242659432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_113
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 269
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb57f55c47dda86438c1dc0514d4a317
+      internalID: 1550873502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_114
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 139
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6e9f7c50e67d34d9be2a110d8a82cb
+      internalID: 2045074468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_115
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 139
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562c0eea601dfb54f9fee8e5686c7382
+      internalID: 2012496786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_116
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 138
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dd9c072a7f367428469b923f979c8a
+      internalID: -1273097334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_117
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 138
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa4f5e1b0766e54e8699740589dda81
+      internalID: 2090161980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_118
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 138
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012096679c41cb14890897c2bff19abb
+      internalID: 319622082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_119
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 138
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94639d233df0b3f45b88a622efb52783
+      internalID: -1509548511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_120
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 137
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0edc09ffb64cd4d8fd0eede40bc88a
+      internalID: 514162771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_121
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 137
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d12a061e877494aa803aa3be35bf6b
+      internalID: -1310348023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_122
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 137
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9516ec2dcba964f8b525d82556b20e
+      internalID: -547071461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_123
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 137
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef6fa0bde1c6a34091ae27a4d543295
+      internalID: 953824483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_124
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 137
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8644d92cb729544e9fc44499b2f1429
+      internalID: -1724620294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_125
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 137
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6cefaeb60653ec44b16bfbc683e7f4f
+      internalID: 1126764139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_126
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 13
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fe002038ef0b34f9487330239a59fc
+      internalID: 1223229598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_127
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 13
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc27e3a272e950944aa6dc893b7e7732
+      internalID: 1816756227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_128
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 12
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ca4ec622f6eca4a885bb59c7519c64
+      internalID: 1283145354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_129
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 12
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e844196cbd887e4db931a0d22cd636e
+      internalID: 43026613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_130
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 12
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461372aad19914e4fb990e03b5f1b7d2
+      internalID: 110298777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_131
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 12
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31d470b41081d24d886da3a7a239756
+      internalID: -1718090663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_132
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 11
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54282b94c25551646be9d84276659806
+      internalID: 1277609364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_133
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 11
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b2a242772c0e14f87d7a6d835b73db
+      internalID: 845227863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_134
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 11
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56ead30b35157342b3440e1c719e7b0
+      internalID: 278889810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_135
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 11
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b47a119c23d38247b840eacf2bc1759
+      internalID: 401669162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_136
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 11
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cefbf6800bbe3419383bf680315383
+      internalID: 1010774774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsters_pets_137
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 11
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebac33d0095b1ce43bc3f768f8adac4c
+      internalID: 1552440998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      monsters_pets_0: -1236786508
+      monsters_pets_1: -1919876208
+      monsters_pets_10: 1538566451
+      monsters_pets_100: 1823381255
+      monsters_pets_101: 2029421867
+      monsters_pets_102: -1695542667
+      monsters_pets_103: 1192396060
+      monsters_pets_104: -411523982
+      monsters_pets_105: 862396042
+      monsters_pets_106: 914740156
+      monsters_pets_107: 169602486
+      monsters_pets_108: 1348942056
+      monsters_pets_109: 1057364910
+      monsters_pets_11: -1266966217
+      monsters_pets_110: -138332297
+      monsters_pets_111: -339614958
+      monsters_pets_112: -242659432
+      monsters_pets_113: 1550873502
+      monsters_pets_114: 2045074468
+      monsters_pets_115: 2012496786
+      monsters_pets_116: -1273097334
+      monsters_pets_117: 2090161980
+      monsters_pets_118: 319622082
+      monsters_pets_119: -1509548511
+      monsters_pets_12: -1854309645
+      monsters_pets_120: 514162771
+      monsters_pets_121: -1310348023
+      monsters_pets_122: -547071461
+      monsters_pets_123: 953824483
+      monsters_pets_124: -1724620294
+      monsters_pets_125: 1126764139
+      monsters_pets_126: 1223229598
+      monsters_pets_127: 1816756227
+      monsters_pets_128: 1283145354
+      monsters_pets_129: 43026613
+      monsters_pets_13: -1740529035
+      monsters_pets_130: 110298777
+      monsters_pets_131: -1718090663
+      monsters_pets_132: 1277609364
+      monsters_pets_133: 845227863
+      monsters_pets_134: 278889810
+      monsters_pets_135: 401669162
+      monsters_pets_136: 1010774774
+      monsters_pets_137: 1552440998
+      monsters_pets_14: 2109987217
+      monsters_pets_15: 384452497
+      monsters_pets_16: 989457242
+      monsters_pets_17: -1312200375
+      monsters_pets_18: -586363375
+      monsters_pets_19: 232851061
+      monsters_pets_2: -1828233005
+      monsters_pets_20: -246142789
+      monsters_pets_21: -688840809
+      monsters_pets_22: -1843127353
+      monsters_pets_23: -1727912697
+      monsters_pets_24: 305228432
+      monsters_pets_25: 2083445669
+      monsters_pets_26: -176627875
+      monsters_pets_27: 1562900519
+      monsters_pets_28: -53437566
+      monsters_pets_29: 837500824
+      monsters_pets_3: 283957229
+      monsters_pets_30: 790493954
+      monsters_pets_31: -2063912278
+      monsters_pets_32: -1907762605
+      monsters_pets_33: 871843792
+      monsters_pets_34: -740047860
+      monsters_pets_35: 960248079
+      monsters_pets_36: -1787700172
+      monsters_pets_37: 473180153
+      monsters_pets_38: 1437122172
+      monsters_pets_39: 89924863
+      monsters_pets_4: 2045621721
+      monsters_pets_40: -980827705
+      monsters_pets_41: -2080454138
+      monsters_pets_42: 632169054
+      monsters_pets_43: -969894946
+      monsters_pets_44: 77603532
+      monsters_pets_45: 1629059550
+      monsters_pets_46: -915789826
+      monsters_pets_47: -1391662028
+      monsters_pets_48: -1289713245
+      monsters_pets_49: 1168433169
+      monsters_pets_5: 375061637
+      monsters_pets_50: 1916487009
+      monsters_pets_51: 1413254870
+      monsters_pets_52: 300939677
+      monsters_pets_53: 1476726345
+      monsters_pets_54: -862494046
+      monsters_pets_55: 812248144
+      monsters_pets_56: -710359083
+      monsters_pets_57: 431045415
+      monsters_pets_58: 1889820696
+      monsters_pets_59: -951666693
+      monsters_pets_6: 1889641988
+      monsters_pets_60: -2056213757
+      monsters_pets_61: -1226866305
+      monsters_pets_62: -909862595
+      monsters_pets_63: 1839439531
+      monsters_pets_64: 692186828
+      monsters_pets_65: -128514724
+      monsters_pets_66: 109011211
+      monsters_pets_67: 1040150156
+      monsters_pets_68: -1635444830
+      monsters_pets_69: -490485526
+      monsters_pets_7: 110903963
+      monsters_pets_70: 806313101
+      monsters_pets_71: -952692268
+      monsters_pets_72: 1457453959
+      monsters_pets_73: -348951968
+      monsters_pets_74: 1135923618
+      monsters_pets_75: 1597993310
+      monsters_pets_76: -494699068
+      monsters_pets_77: -1671093991
+      monsters_pets_78: -202538065
+      monsters_pets_79: -768442359
+      monsters_pets_8: -1386539776
+      monsters_pets_80: 1200552320
+      monsters_pets_81: 147206357
+      monsters_pets_82: 264226426
+      monsters_pets_83: 1092151659
+      monsters_pets_84: -397941077
+      monsters_pets_85: 870567216
+      monsters_pets_86: -638871025
+      monsters_pets_87: 1806269763
+      monsters_pets_88: -200377016
+      monsters_pets_89: 941940355
+      monsters_pets_9: 671258755
+      monsters_pets_90: -1137333369
+      monsters_pets_91: 226702700
+      monsters_pets_92: -1396627812
+      monsters_pets_93: -1362330375
+      monsters_pets_94: 1580094099
+      monsters_pets_95: 29756391
+      monsters_pets_96: 1960458376
+      monsters_pets_97: 1991502805
+      monsters_pets_98: 259336190
+      monsters_pets_99: -806717367
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
