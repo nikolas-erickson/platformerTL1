@@ -7,7 +7,6 @@ public class EntityDeadState : EntityState
 {
     public override void EnterState(Entity entity)
     {
-
     }
     public override void UpdateState(Entity entity)
     {

@@ -20,7 +20,6 @@ public class EntityJumpState : EntityState
     }
     public override void OnCollisionEnter(Entity entity)
     {
-        entity.currentState = entity.idleState;
-        entity.currentState.EnterState(entity);
+        entity.enterIdleState();
     }
 }

@@ -8,15 +8,13 @@ public class EntityRunState : EntityState
 
     public override void EnterState(Entity entity)
     {
-        Animator animator = entity.GetComponent<Animator>();
-        animator.runtimeAnimatorController = entity. as RuntimeAnimatorController
+
     }
     public override void UpdateState(Entity entity)
     {
         if (entity.horizontal == 0f)
         {
-            entity.currentState = entity.idleState;
-            entity.currentState.EnterState(entity);
+            entity.enterIdleState();
         }
 
     }
