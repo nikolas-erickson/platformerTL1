@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class EntityRunState : EntityState
 {
+
     public override void EnterState(Entity entity)
     {
-
+        Animator animator = entity.GetComponent<Animator>();
+        animator.runtimeAnimatorController = entity. as RuntimeAnimatorController
     }
     public override void UpdateState(Entity entity)
     {
