@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Tilemaps;
-using UnityEditor.UI;
+
 using UnityEngine;
 
 public class Snail : Entity
@@ -28,7 +24,6 @@ public class Snail : Entity
     {
         if (!isGroundInFront())
         {
-            horizontal *= -1;
             flip();
         }
         currentState.UpdateState(this);
@@ -44,19 +39,25 @@ public class Snail : Entity
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if (collision.gameObject.tag == "Player" && hitsObjectInDirection(collision.gameObject, Vector2.up))
+        if (collision.gameObject.tag == "Player" && hitsObjectInDirection(collision.gameObject, Vector2.up, playerLayer))
         {
             kill();
+        }
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("ground") &&
+            hitsObjectInDirection(collision.gameObject, Vector2.right * horizontal, groundLayer))
+        {
+            flip();
         }
         currentState.OnCollisionEnter(this);
     }
 
 
 
-    private bool hitsObjectInDirection(GameObject other, Vector2 dir)
+    private bool hitsObjectInDirection(GameObject other, Vector2 dir, LayerMask layer)
     {
         RaycastHit2D rayCastHit = Physics2D.BoxCast(boxColl2d.bounds.center, boxColl2d.bounds.size,
-             0, dir, 0.1f, playerLayer);
+             0, dir, 0.1f, layer);
         if (rayCastHit.collider == null) return false;
         if (rayCastHit.collider.gameObject == other)
         {
@@ -89,6 +90,7 @@ public class Snail : Entity
         Vector3 localScale = transform.localScale;
         localScale.x *= -1f;
         transform.localScale = localScale;
+        horizontal *= -1;
     }
 
     public bool isVulnerableToJump()

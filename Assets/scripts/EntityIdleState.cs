@@ -24,5 +24,9 @@ public class EntityIdleState : EntityState
     {
 
     }
+    public override string getState()
+    {
+        return "idle";
+    }
 }
 

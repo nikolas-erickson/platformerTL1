@@ -9,6 +9,10 @@ public class camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
         if (player.transform.position.x > 0)
         {
             transform.position = new Vector3(player.transform.position.x, 0, -10);

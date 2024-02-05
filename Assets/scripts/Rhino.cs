@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
-using UnityEditor.Tilemaps;
-using UnityEditor.UI;
+
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Rhino : Entity
@@ -12,6 +8,7 @@ public class Rhino : Entity
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private int direction;
     private bool _hitWall;
+    private bool _charging;
     [SerializeField] private GameObject player;
 
 
@@ -21,21 +18,26 @@ public class Rhino : Entity
     void Start()
     {
         initializeComponents();
-        speed = 7;
+        speed = 10;
         jumpPower = 1;
         horizontal = 0;
         enterIdleState();
         _hitWall = false;
+        _charging = false;
         direction = -1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (canSeePlayer())
+        if (!_charging && currentState.getState() != "recover")
         {
-            //horizontal = direction;
-            //enterRunState();
+            if (canSeePlayer())
+            {
+                horizontal = direction;
+                enterRunState();
+                _charging = true;
+            }
         }
         currentState.UpdateState(this);
     }
@@ -49,17 +51,35 @@ public class Rhino : Entity
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
-        if (collision.gameObject.tag == "Player" && hitsObjectInDirection(collision.gameObject, Vector2.up))
+        Debug.Log("collision");
+        if (collision.gameObject.tag == "Player" && hitsObjectInDirection(collision.gameObject, Vector2.up, playerLayer))
         {
-            kill();
+            if (isVulnerableToJump())
+            {
+                kill();
+            }
+        }
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("ground") &&
+            hitsObjectInDirection(collision.gameObject, Vector2.right * direction, groundLayer))
+        {
+            if (_charging)
+            {
+                //hitwall
+                enterRecoverState(2f);
+                _charging = false;
+                flip();
+                direction *= -1;
+                horizontal = 0;
+            }
         }
         currentState.OnCollisionEnter(this);
     }
 
     private bool canSeePlayer()
     {
-        RaycastHit2D rayCastHit = Physics2D.Raycast(boxColl2d.bounds.center,
+        RaycastHit2D rayCastHit = Physics2D.Raycast(boxColl2d.bounds.center +
+            new Vector3((direction * boxColl2d.bounds.size.x / 1.9f), 0, 0),
             Vector2.right * direction, 20);
         if (rayCastHit.collider == null) return false;
         return rayCastHit.collider.tag == "Player";
@@ -67,10 +87,11 @@ public class Rhino : Entity
 
 
 
-    private bool hitsObjectInDirection(GameObject other, Vector2 dir)
+    private bool hitsObjectInDirection(GameObject other, Vector2 dir, LayerMask layer)
     {
         RaycastHit2D rayCastHit = Physics2D.BoxCast(boxColl2d.bounds.center, boxColl2d.bounds.size,
-             0, dir, 0.1f, playerLayer);
+             0, dir, 0.1f, layer);
+        Debug.Log(rayCastHit.collider.gameObject);
         if (rayCastHit.collider == null) return false;
         if (rayCastHit.collider.gameObject == other)
         {

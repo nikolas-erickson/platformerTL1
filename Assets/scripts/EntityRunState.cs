@@ -26,4 +26,8 @@ public class EntityRunState : EntityState
     {
 
     }
+    public override string getState()
+    {
+        return "run";
+    }
 }

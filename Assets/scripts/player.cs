@@ -1,7 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Animations;
-using UnityEditor.Tilemaps;
+//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEditor.Animations;
+//using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class player : Entity

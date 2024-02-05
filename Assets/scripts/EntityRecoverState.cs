@@ -3,14 +3,19 @@ using System.Collections.Generic;
 using System.Xml;
 using UnityEngine;
 
-public class EntityDeadState : EntityState
+public class EntityRecoverState : EntityState
 {
+    public float recoverTime;
     public override void EnterState(Entity entity)
     {
     }
     public override void UpdateState(Entity entity)
     {
-
+        recoverTime -= Time.deltaTime;
+        if (recoverTime <= 0)
+        {
+            entity.enterIdleState();
+        }
     }
     public override void FixedUpdateState(Entity entity)
     {
@@ -22,6 +27,6 @@ public class EntityDeadState : EntityState
     }
     public override string getState()
     {
-        return "dead";
+        return "recover";
     }
 }

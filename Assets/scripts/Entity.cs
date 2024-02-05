@@ -1,6 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Animations;
+//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEditor.Animations;
 using UnityEngine;
 
 public class Entity : MonoBehaviour
@@ -17,6 +17,7 @@ public class Entity : MonoBehaviour
     protected EntityIdleState idleState = new EntityIdleState();
     protected EntityJumpState jumpState = new EntityJumpState();
     protected EntityRunState runState = new EntityRunState();
+    protected EntityRecoverState recoverState = new EntityRecoverState();
 
 
     // Start is called before the first frame update
@@ -57,5 +58,13 @@ public class Entity : MonoBehaviour
         currentState = deadState;
         currentState.EnterState(this);
         animator.SetTrigger("triggerDead");
+    }
+
+    public void enterRecoverState(float timeToRecover)
+    {
+        recoverState.recoverTime = timeToRecover;
+        currentState = recoverState;
+        currentState.EnterState(this);
+        animator.SetTrigger("triggerRecover");
     }
 }

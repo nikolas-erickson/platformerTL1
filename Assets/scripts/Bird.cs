@@ -1,8 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Tilemaps;
-using UnityEditor.UI;
+//using System;
+//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEditor.Tilemaps;
+//using UnityEditor.UI;
 using UnityEngine;
 
 public class Bird : Entity

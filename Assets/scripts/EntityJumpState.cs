@@ -22,4 +22,9 @@ public class EntityJumpState : EntityState
     {
         entity.enterIdleState();
     }
+
+    public override string getState()
+    {
+        return "jump";
+    }
 }
