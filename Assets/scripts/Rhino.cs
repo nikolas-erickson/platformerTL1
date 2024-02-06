@@ -7,9 +7,8 @@ public class Rhino : Entity
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private int direction;
-    private bool _hitWall;
     private bool _charging;
-    [SerializeField] private GameObject player;
+    private GameObject player;
 
 
 
@@ -17,12 +16,12 @@ public class Rhino : Entity
     // Start is called before the first frame update
     void Start()
     {
+        player = Player.Instance.gameObject;
         initializeComponents();
         speed = 10;
         jumpPower = 1;
         horizontal = 0;
         enterIdleState();
-        _hitWall = false;
         _charging = false;
         direction = -1;
     }
@@ -51,7 +50,6 @@ public class Rhino : Entity
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("collision");
         if (collision.gameObject.tag == "Player" && hitsObjectInDirection(collision.gameObject, Vector2.up, playerLayer))
         {
             if (isVulnerableToJump())
@@ -60,10 +58,10 @@ public class Rhino : Entity
             }
         }
 
-        if (collision.gameObject.layer == LayerMask.NameToLayer("ground") &&
-            hitsObjectInDirection(collision.gameObject, Vector2.right * direction, groundLayer))
+        if (_charging)
         {
-            if (_charging)
+            if (collision.gameObject.layer == LayerMask.NameToLayer("ground") &&
+                hitsObjectInDirection(collision.gameObject, Vector2.right * direction, groundLayer))
             {
                 //hitwall
                 enterRecoverState(2f);
@@ -74,6 +72,24 @@ public class Rhino : Entity
             }
         }
         currentState.OnCollisionEnter(this);
+    }
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+
+        if (_charging)
+        {
+            if (collision.gameObject.layer == LayerMask.NameToLayer("ground") &&
+                hitsObjectInDirection(collision.gameObject, Vector2.right * direction, groundLayer))
+            {
+                //hitwall
+                enterRecoverState(2f);
+                _charging = false;
+                flip();
+                direction *= -1;
+                horizontal = 0;
+            }
+        }
     }
 
     private bool canSeePlayer()
@@ -89,9 +105,11 @@ public class Rhino : Entity
 
     private bool hitsObjectInDirection(GameObject other, Vector2 dir, LayerMask layer)
     {
+        Debug.Log("staring routine hitsindir against " + other.name + " in dir " + dir + " in layer " + layer);
         RaycastHit2D rayCastHit = Physics2D.BoxCast(boxColl2d.bounds.center, boxColl2d.bounds.size,
              0, dir, 0.1f, layer);
-        Debug.Log(rayCastHit.collider.gameObject);
+
+        Debug.Log("gameobject is " + rayCastHit.collider.gameObject);
         if (rayCastHit.collider == null) return false;
         if (rayCastHit.collider.gameObject == other)
         {

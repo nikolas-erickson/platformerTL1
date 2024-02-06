@@ -5,6 +5,7 @@ public class Snail : Entity
 {
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask playerLayer;
+    [SerializeField] private GameObject snailShell;
 
 
 
@@ -43,15 +44,19 @@ public class Snail : Entity
         {
             kill();
         }
+        currentState.OnCollisionEnter(this);
+    }
+
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
 
         if (collision.gameObject.layer == LayerMask.NameToLayer("ground") &&
             hitsObjectInDirection(collision.gameObject, Vector2.right * horizontal, groundLayer))
         {
             flip();
         }
-        currentState.OnCollisionEnter(this);
     }
-
 
 
     private bool hitsObjectInDirection(GameObject other, Vector2 dir, LayerMask layer)
@@ -100,6 +105,8 @@ public class Snail : Entity
 
     public void kill()
     {
+        //Instantiate(snailShell, transform.position, transform.rotation);
+        //Destroy(gameObject);
         enterDeadState();
     }
 }

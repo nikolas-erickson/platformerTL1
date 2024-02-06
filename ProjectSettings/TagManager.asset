@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - enemy
+  - goal
+  - melon
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - ground
   - enemy
   - player
-  - 
+  - points
   - 
   - 
   - 

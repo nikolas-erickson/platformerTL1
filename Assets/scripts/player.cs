@@ -2,10 +2,13 @@
 //using System.Collections.Generic;
 //using UnityEditor.Animations;
 //using UnityEditor.Tilemaps;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class player : Entity
+public class Player : Entity
 {
+    public static Player Instance { get; private set; }
+
     // Variables
     private bool isFacingRight = true;
     [SerializeField] private LayerMask groundLayer;
@@ -14,10 +17,30 @@ public class player : Entity
     public LayerMask enemyLayer;
     private AudioSource audioSource;
     [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip winSound;
     private bool tempInvulnerable;
     private float timeInvulnerable;
+    [SerializeField] GameController logicController;
+    private bool _playing;
+
+    // needed for singleton
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject); // dont allow 2 Player.Instance
+        }
+    }
+
+
+
     void Start()
     {
+        _playing = true;
         tempInvulnerable = false;
         initializeComponents();
         audioSource = GetComponent<AudioSource>();
@@ -40,14 +63,17 @@ public class player : Entity
 
 
         //store input in horizontal variable
-        horizontal = Input.GetAxis("Horizontal");
-
-        //handle input related to jumping
-        if (Input.GetButtonDown("Jump") && isGround() && currentState != jumpState)
+        if (_playing)
         {
-            audioSource.PlayOneShot(jumpSound, 1);
-            //enterJumpState();
-            enterJumpState();
+            horizontal = Input.GetAxis("Horizontal");
+
+            //handle input related to jumping
+            if (Input.GetButtonDown("Jump") && isGround() && currentState != jumpState)
+            {
+                audioSource.PlayOneShot(jumpSound, 1);
+                //enterJumpState();
+                enterJumpState();
+            }
         }
 
 
@@ -86,18 +112,29 @@ public class player : Entity
             //play sound for breaking brick
             Destroy(collision.gameObject);
         }
-        currentState.OnCollisionEnter(this);
-
-        if (collision.gameObject.tag == "enemy" && hitsObjectInDirection(collision.gameObject, Vector2.down))
-        {
-            enterJumpState();
-            //collision.gameObject.kill();
-        }
         else if (collision.gameObject.tag == "enemy")
         {
-            //bad touch
-            enterDeadState();
+            Debug.Log("checking collision " + collision.gameObject);
+            if (hitsObjectInDirection(collision.gameObject, Vector2.down))
+            {
+                enterJumpState();
+                //collision.gameObject.kill();
+            }
+            else
+            {
+                //bad touch
+                enterDeadState();
+            }
+
         }
+        else if (collision.gameObject.tag == "goal")
+        {
+            rigidBody.bodyType = RigidbodyType2D.Static;
+            audioSource.PlayOneShot(winSound, 1);
+            _playing = false;
+            //CameraScript.Instance.finalZoom(transform.position);
+        }
+        currentState.OnCollisionEnter(this);
     }
     private bool isCollidingWithBrick()
     {
@@ -117,4 +154,23 @@ public class player : Entity
         }
         return false;
     }
+
+    /*  handled in item script
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("points"))
+        {
+            if (collision.gameObject.tag == "melon")
+            {
+                logicController.addToPoints(10);
+                Destroy(collision.gameObject);
+            }
+            else if (collision.gameObject.tag == "pineapple")
+            {
+                logicController.addToPoints(20);
+                Destroy(collision.gameObject);
+            }
+        }
+    }
+    */
 }

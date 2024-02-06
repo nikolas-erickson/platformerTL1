@@ -23,7 +23,7 @@ public class Bird : Entity
         speed = 3;
         jumpPower = 1;
         horizontal = -1;
-        removeCorpse = 0.5f;
+        removeCorpse = 0.3f;
         enterIdleState();
     }
 

@@ -200,3 +200,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  snailShell: {fileID: 2289874844110751794, guid: 30c2fd010df9bd311b31f323ee6cbf3a, type: 3}
