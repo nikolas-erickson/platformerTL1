@@ -6,10 +6,11 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    [SerializeField] gameSaveData saveData;
     public static GameController Instance { get; private set; }
     [SerializeField] private Text _pointsText;
     private int score;
-    private int lives;
+    //private int lives;
     void Awake()
     {
         if (Instance == null)
@@ -26,13 +27,18 @@ public class GameController : MonoBehaviour
     void Start()
     {
         score = 0;
-        lives = 0;
+        //lives = 0;
     }
     public void addToPoints(int amount)
     {
         score += amount;
         _pointsText.text = "Score: " + score;
 
+    }
+
+    public void storeLevelComplete()
+    {
+        saveData.completeLevel();
     }
 
     // Update is called once per frame

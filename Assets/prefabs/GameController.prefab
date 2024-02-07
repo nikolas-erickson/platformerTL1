@@ -44,4 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4a01c9553358d3708cf4893ffeac5c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  saveData: {fileID: 11400000, guid: e1ca1607b099443f48d0dad5acc959d3, type: 2}
   _pointsText: {fileID: 0}

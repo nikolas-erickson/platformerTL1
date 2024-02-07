@@ -8219,6 +8219,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5388253534915447514, guid: 6edc892793269a37ba3f37282080407e, type: 3}
+      propertyPath: saveData
+      value: 
+      objectReference: {fileID: 11400000, guid: e1ca1607b099443f48d0dad5acc959d3, type: 2}
+    - target: {fileID: 5388253534915447514, guid: 6edc892793269a37ba3f37282080407e, type: 3}
       propertyPath: _pointsText
       value: 
       objectReference: {fileID: 1799073341}

@@ -4,6 +4,7 @@
 //using UnityEditor.Tilemaps;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Entity
 {
@@ -74,17 +75,20 @@ public class Player : Entity
                 //enterJumpState();
                 enterJumpState();
             }
+            flip();
+            currentState.UpdateState(this);
         }
 
 
 
-        flip();
-        currentState.UpdateState(this);
     }
 
     private void FixedUpdate()
     {
-        currentState.FixedUpdateState(this);
+        if (_playing)
+        {
+            currentState.FixedUpdateState(this);
+        }
     }
 
     private bool isGround()
@@ -132,7 +136,10 @@ public class Player : Entity
             rigidBody.bodyType = RigidbodyType2D.Static;
             audioSource.PlayOneShot(winSound, 1);
             _playing = false;
+            GameController.Instance.storeLevelComplete();
+            //win animation?
             //CameraScript.Instance.finalZoom(transform.position);
+            SceneManager.LoadScene("levelSelect");
         }
         currentState.OnCollisionEnter(this);
     }
