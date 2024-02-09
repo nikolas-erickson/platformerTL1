@@ -7,6 +7,11 @@ TagManager:
   - enemy
   - goal
   - melon
+  - iObj
+  - trampoline
+  - fallingPlatform
+  - trap
+  - platform
   layers:
   - Default
   - TransparentFX
@@ -18,7 +23,7 @@ TagManager:
   - enemy
   - player
   - points
-  - 
+  - interactable
   - 
   - 
   - 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
@@ -11,6 +12,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private Text _pointsText;
     private int score;
     //private int lives;
+    private float timerAmt;
+    private bool timerActive;
     void Awake()
     {
         if (Instance == null)
@@ -27,6 +30,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         score = 0;
+        timerActive = false;
         //lives = 0;
     }
     public void addToPoints(int amount)
@@ -41,9 +45,22 @@ public class GameController : MonoBehaviour
         saveData.completeLevel();
     }
 
+    public void startTmrReturnToLvlSelect()
+    {
+        timerAmt = 2f;
+        timerActive = true;
+    }
     // Update is called once per frame
     void Update()
     {
+        if (timerActive)
+        {
+            timerAmt -= Time.deltaTime;
+            if (timerAmt < 0)
+            {
+                SceneManager.LoadScene("levelSelect");
+            }
+        }
 
     }
 }

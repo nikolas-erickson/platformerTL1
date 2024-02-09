@@ -8,6 +8,10 @@ public class CameraScript : MonoBehaviour
     private Camera cam;
     private bool _zooming;
     private float _zoomSpeed;
+    private float _zoomStartTime;
+    private float _zoomDur;
+    private Vector3 _zoomStartPos;
+    private Vector3 _zoomFinalPos;
     public static CameraScript Instance; // singleton instance
 
     void Awake()
@@ -34,6 +38,9 @@ public class CameraScript : MonoBehaviour
     {
         if (_zooming)
         {
+            float t = (Time.time - _zoomStartTime) / _zoomDur;
+            transform.position = new Vector3(_zoomStartPos.x + (_zoomFinalPos.x - _zoomStartPos.x * t),
+                _zoomStartPos.y + (_zoomFinalPos.y - _zoomStartPos.y * t), 0);
             cam.orthographicSize -= _zoomSpeed * Time.deltaTime;
             if (cam.orthographicSize < 5)
             {
@@ -55,7 +62,9 @@ public class CameraScript : MonoBehaviour
 
     public void finalZoom(Vector2 pos)
     {
-        transform.position = new Vector3(pos.x, pos.y, 0);
+        _zoomStartTime = Time.time;
+        _zoomFinalPos = new Vector3(pos.x, pos.y, -10);
+        _zoomStartPos = transform.position;
         _zooming = true;
     }
 }

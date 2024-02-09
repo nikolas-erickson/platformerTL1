@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
+using UnityEditor.U2D;
 using UnityEngine;
 
 public enum levelState
@@ -12,23 +14,12 @@ public enum levelState
 }
 
 [CreateAssetMenu]
-public class gameSaveData : ScriptableObject
+public class gameSaveData : ScriptableObject, iDataPersistence
 {
-    private List<levelState> _levels;
+    private levelState[] _levels;
     private static int _numLevels = 8;
     private int currentLevel;
-    void OnEnable()
-    {
-        while (_levels.Count < _numLevels)
-        {
-            _levels.Add(levelState.locked);
-        }
-        if (_levels[0] == levelState.locked)
-        {
-            _levels[0] = levelState.unlocked;
-        }
-    }
-
+    private bool _loaded = false;
 
     public levelState getLevelState(int levelNum)
     {
@@ -58,4 +49,41 @@ public class gameSaveData : ScriptableObject
         Debug.Log("set lvl " + l);
         currentLevel = l;
     }
+
+    public void exitGame()
+    {
+        Application.Quit();
+    }
+
+    public void loadData(GameData data)
+    {
+        if (!_loaded)
+        {
+
+            _levels = new levelState[_numLevels];
+            for (int i = 0; i < _numLevels; i++)
+            {
+                _levels[i] = data.levels[i];
+            }
+            _loaded = true;
+        }
+    }
+    public void saveData(ref GameData data)
+    {
+        for (int i = 0; i < _numLevels; i++)
+        {
+            data.levels[i] = _levels[i];
+        }
+    }
+
+    public void printData()
+    {
+        Debug.Log("printing");
+        foreach (levelState l in _levels)
+        {
+            Debug.Log("state is " + l);
+        }
+    }
+
+
 }

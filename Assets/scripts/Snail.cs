@@ -42,6 +42,8 @@ public class Snail : Entity
 
         if (collision.gameObject.tag == "Player" && hitsObjectInDirection(collision.gameObject, Vector2.up, playerLayer))
         {
+            gameObject.tag = "iObj";
+            Debug.Log(gameObject.tag);
             kill();
         }
         currentState.OnCollisionEnter(this);

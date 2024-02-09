@@ -6,19 +6,28 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+/// <summary>
+/// Player entity is created for use as a singleton
+/// </summary>
 public class Player : Entity
 {
-    public static Player Instance { get; private set; }
+    public static Player Instance { get; private set; } // use as singleton
 
     // Variables
     private bool isFacingRight = true;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private LayerMask interactableLayer;
     public Transform headCheck;
     public LayerMask brickLayer;
     public LayerMask enemyLayer;
     private AudioSource audioSource;
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private AudioClip winSound;
+    [SerializeField] private AudioClip hurtSound;
+    [SerializeField] private AudioClip themeSound;
+    [SerializeField] private AudioClip walkSound;
+    [SerializeField] private GameObject bodyParts;
     private bool tempInvulnerable;
     private float timeInvulnerable;
     [SerializeField] GameController logicController;
@@ -66,10 +75,14 @@ public class Player : Entity
         //store input in horizontal variable
         if (_playing)
         {
+            if (transform.position.y < -8)
+            {
+                getHurt();
+            }
             horizontal = Input.GetAxis("Horizontal");
 
             //handle input related to jumping
-            if (Input.GetButtonDown("Jump") && isGround() && currentState != jumpState)
+            if (Input.GetButtonDown("Jump") && (isOnTop(groundLayer) || isOnTop(interactableLayer)) && currentState != jumpState)
             {
                 audioSource.PlayOneShot(jumpSound, 1);
                 //enterJumpState();
@@ -78,9 +91,6 @@ public class Player : Entity
             flip();
             currentState.UpdateState(this);
         }
-
-
-
     }
 
     private void FixedUpdate()
@@ -91,13 +101,12 @@ public class Player : Entity
         }
     }
 
-    private bool isGround()
+    private bool isOnTop(LayerMask layer)
     {
         RaycastHit2D rayCastHit = Physics2D.BoxCast(boxColl2d.bounds.center, boxColl2d.bounds.size,
-             0, Vector2.down, 0.1f, groundLayer);
+             0, Vector2.down, 0.2f, layer);
         return rayCastHit.collider != null;
     }
-
     private void flip()
     {
         if ((isFacingRight && horizontal < 0f) || (!isFacingRight && horizontal > 0f))
@@ -118,17 +127,20 @@ public class Player : Entity
         }
         else if (collision.gameObject.tag == "enemy")
         {
-            Debug.Log("checking collision " + collision.gameObject);
-            if (hitsObjectInDirection(collision.gameObject, Vector2.down))
+            if (hitsObjectInDirection(collision.gameObject, Vector2.down, enemyLayer))
             {
                 enterJumpState();
                 //collision.gameObject.kill();
             }
             else
             {
-                //bad touch
-                enterDeadState();
+                getHurt();
             }
+
+        }
+        else if (collision.gameObject.tag == "trap")
+        {
+            getHurt();
 
         }
         else if (collision.gameObject.tag == "goal")
@@ -137,9 +149,17 @@ public class Player : Entity
             audioSource.PlayOneShot(winSound, 1);
             _playing = false;
             GameController.Instance.storeLevelComplete();
+            CameraScript.Instance.finalZoom(transform.position);
             //win animation?
-            //CameraScript.Instance.finalZoom(transform.position);
             SceneManager.LoadScene("levelSelect");
+        }
+        else if (collision.gameObject.tag == "trampoline")
+        {
+            if (hitsObjectInDirection(collision.gameObject, Vector2.down, interactableLayer))
+            {
+                enterJumpState();
+                rigidBody.velocity = new Vector2(rigidBody.velocity.x, 25);
+            }
         }
         currentState.OnCollisionEnter(this);
     }
@@ -150,10 +170,10 @@ public class Player : Entity
 
 
 
-    private bool hitsObjectInDirection(GameObject other, Vector2 dir)
+    private bool hitsObjectInDirection(GameObject other, Vector2 dir, LayerMask layer)
     {
         RaycastHit2D rayCastHit = Physics2D.BoxCast(boxColl2d.bounds.center, boxColl2d.bounds.size,
-             0, dir, 0.1f, enemyLayer);
+             0, dir, 0.1f, layer);
         if (rayCastHit.collider == null) return false;
         if (rayCastHit.collider.gameObject == other)
         {
@@ -162,22 +182,21 @@ public class Player : Entity
         return false;
     }
 
-    /*  handled in item script
-    public void OnTriggerEnter2D(Collider2D collision)
+
+    private void getHurt()
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("points"))
+        CameraScript.Instance.finalZoom(transform.position);
+        audioSource.PlayOneShot(hurtSound, 1);
+        _playing = false;
+        //create bloody body parts when dead
+        for (int i = 0; i < 7; i++)
         {
-            if (collision.gameObject.tag == "melon")
-            {
-                logicController.addToPoints(10);
-                Destroy(collision.gameObject);
-            }
-            else if (collision.gameObject.tag == "pineapple")
-            {
-                logicController.addToPoints(20);
-                Destroy(collision.gameObject);
-            }
+            Instantiate(bodyParts, transform.position, transform.rotation);
         }
+        //set timer for dramatic camera zoom
+        GameController.Instance.startTmrReturnToLvlSelect();
+        //remove player instance
+        Destroy(gameObject);
+        //enterDeadState();
     }
-    */
 }

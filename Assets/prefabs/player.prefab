@@ -265,11 +265,23 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 1024
   headCheck: {fileID: 7473447993538559062}
   brickLayer:
     serializedVersion: 2
     m_Bits: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
   jumpSound: {fileID: 8300000, guid: bb859e52f4518cf44892f99159ea0316, type: 3}
+  winSound: {fileID: 8300000, guid: e8ba041ea46c4441db4327dd110bbf35, type: 3}
+  hurtSound: {fileID: 8300000, guid: b4fce139c60e2f260bf868dfad841448, type: 3}
+  themeSound: {fileID: 8300000, guid: 88e037e04600e110a88df21ec368f850, type: 3}
+  walkSound: {fileID: 8300000, guid: 5066cf8cb4a5990a684032e413bde0e0, type: 3}
+  bodyParts: {fileID: 7499201792461467189, guid: 81528bcba7ac55e379c9ccc83e06bd15, type: 3}
+  logicController: {fileID: 0}
 --- !u!82 &801812897591081376
 AudioSource:
   m_ObjectHideFlags: 0

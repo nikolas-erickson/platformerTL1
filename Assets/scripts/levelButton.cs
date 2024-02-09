@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class levelButton : MonoBehaviour
 {
-    private Color grey = new Color(100, 100, 100);
+    private Color grey = new Color(10, 10, 10);
     private Color yellow = new Color(255, 255, 0);
     private Color green = new Color(0, 255, 0);
     [SerializeField] private int levelNum;
@@ -29,19 +29,22 @@ public class levelButton : MonoBehaviour
         else if (l == levelState.completed)
         {
             img.color = green;
-            GetComponent<Button>().onClick.AddListener(delegate { OpenScene(levelNum); });
+            btn.onClick.AddListener(delegate { OpenScene(levelNum); });
         }
         else if (l == levelState.unlocked)
         {
             img.color = yellow;
-            GetComponent<Button>().onClick.AddListener(delegate { OpenScene(levelNum); });
+            btn.onClick.AddListener(delegate { OpenScene(levelNum); });
+        }
+        else
+        {
+            img.color = grey;
         }
 
     }
 
     public void OpenScene(int levelNum)
     {
-        Debug.Log("clikc with lvl " + levelNum);
         saveData.setCurrentLevel(levelNum);
         SceneManager.LoadScene("level" + levelNum.ToString("D2"));
     }
