@@ -127,6 +127,7 @@ public class Player : Entity
         }
         else if (collision.gameObject.tag == "enemy")
         {
+            Debug.Log("hit enemy");
             if (hitsObjectInDirection(collision.gameObject, Vector2.down, enemyLayer))
             {
                 enterJumpState();
@@ -183,7 +184,7 @@ public class Player : Entity
     }
 
 
-    private void getHurt()
+    public void getHurt()
     {
         CameraScript.Instance.finalZoom(transform.position);
         audioSource.PlayOneShot(hurtSound, 1);

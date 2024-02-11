@@ -1,4 +1,5 @@
 
+using System.Collections;
 using UnityEngine;
 
 public class Snail : Entity
@@ -42,8 +43,6 @@ public class Snail : Entity
 
         if (collision.gameObject.tag == "Player" && hitsObjectInDirection(collision.gameObject, Vector2.up, playerLayer))
         {
-            gameObject.tag = "iObj";
-            Debug.Log(gameObject.tag);
             kill();
         }
         currentState.OnCollisionEnter(this);
@@ -107,8 +106,14 @@ public class Snail : Entity
 
     public void kill()
     {
-        //Instantiate(snailShell, transform.position, transform.rotation);
-        //Destroy(gameObject);
         enterDeadState();
+        StartCoroutine(replaceWithShell());
+    }
+
+    IEnumerator replaceWithShell()
+    {
+        yield return new WaitForSeconds(.1f);
+        Instantiate(snailShell, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 }

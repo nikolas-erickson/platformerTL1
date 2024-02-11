@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    [SerializeField] private Transform player;
     private Camera cam;
     private bool _zooming;
     private float _zoomSpeed;
@@ -49,9 +48,18 @@ public class CameraScript : MonoBehaviour
         }
         else
         {
-            if (player.transform.position.x > 0)
+            Vector3 playerTransformPosition = Player.Instance.gameObject.transform.position;
+            if (playerTransformPosition.x > 0)
             {
-                transform.position = new Vector3(player.transform.position.x, 0, -10);
+                transform.position = new Vector3(playerTransformPosition.x, transform.position.y, -10);
+            }
+            if (playerTransformPosition.y > 4)
+            {
+                transform.position = new Vector3(transform.position.x, playerTransformPosition.y - 4, -10);
+            }
+            else if (playerTransformPosition.y < -7)
+            {
+                transform.position = new Vector3(transform.position.x, playerTransformPosition.y + 7, -10);
             }
         }
         if (Input.GetKeyDown(KeyCode.Escape))
